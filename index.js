@@ -52,11 +52,12 @@ const questions = [
             },
         ];
 
-    
-const callbackFunction = (answers) => {
-    const fileName = 'README.md'
-    const answersStr = JSON.stringify(answers);
-fs.writeFile(fileName, answersStr, (err) => err ? console.error(err) : console.log("Your new file has been updated."));
+        
+        const callbackFunction = (answers) => {
+            const fileName = 'README.md'
+            const answerss = +parseFloat(questions.name);
+    const answersStr = +stringify(answerss);
+fs.writeFile(fileName, answersStr, (err) => err ? console.error(err) : console.log(answers));
 }
 // let answers = "";
 // const questions = [
